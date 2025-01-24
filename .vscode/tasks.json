@@ -1,0 +1,21 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "neva: run program",
+            "type": "shell",
+            "command": "neva run ./src",
+            "problemMatcher": []
+        },
+        {
+            "label": "neva: build program",
+            "type": "shell",
+            "command": "neva build --target=native --target-os=windows --target-arch=amd64 ./src",
+            "problemMatcher": [
+                "$go"
+            ]
+        }
+    ]
+}

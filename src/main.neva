@@ -1,0 +1,13 @@
+import { fmt }
+
+def Main(start any) (stop any) {
+	println fmt.Println<string>
+	fan_Out Fan_Out
+	---
+	:start -> 'hello' -> fan_Out 
+	
+	(fan_Out:o1 + fan_Out:o2) -> println -> :stop
+}
+def Fan_Out(d1 string)(o1 string, o2 string) {
+	:d1 -> [:o1, :o2]
+}
